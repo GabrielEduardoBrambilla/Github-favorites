@@ -3,10 +3,6 @@ export class Favorites {
     this.root = document.querySelector(root)
     this.load()
   }
-  constructored(root) {
-    this.root = document.querySelector(root)
-    this.load()
-  }
 
   load() {
     this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
